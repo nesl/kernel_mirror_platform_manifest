@@ -1,14 +1,16 @@
+___Expected filesystem structure___
 
-===Expected filesystem structure===
-	.
-	├── kernel -> /aosp/mirror/kernel
-	└── platform
-	    ├── manifest.git
-	    └── prebuilts
-		└── gcc
-		    └── linux-x86
-			└── arm
-			    └── arm-eabi-4.6.git -> /aosp/mirror/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6.git
+```
+.
+├── kernel -> /aosp/mirror/kernel
+└── platform
+    ├── manifest.git
+    └── prebuilts
+	└── gcc
+	    └── linux-x86
+		└── arm
+		    └── arm-eabi-4.6.git -> /aosp/mirror/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6.git
+```
 
 The above is the output of `tree /aosp/kernel_mirror` 
 
@@ -24,4 +26,4 @@ After performing the above steps, you should be able to treat `/aosp/kernel_mirr
 you can do the following: `repo init -u /aosp/kernel_mirror/platform/manifest.git`, then `repo sync` to checkout
 the project.
 
-The `kernel` jenkins jobs uses this kernel mirror to facilitate building kernel projects.
+*The `kernel` jenkins jobs uses this kernel mirror to facilitate building kernel projects.*
