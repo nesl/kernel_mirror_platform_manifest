@@ -34,6 +34,6 @@ mkdir -p /aosp/kernel_mirror/platform
 git clone --bare https://github.com/nesl/kernel_mirror_platform_manifest /aosp/kernel_mirror/platform/manifest.git
 ln -s /aosp/mirror/kernel /aosp/mirror/
 mkdir -p /aosp/kernel_mirror/prebuilts/gcc/linux-x86/arm/
-ln -s /aosp/mirror/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6.git /aosp/kernel_mirror/prebuilts/gcc/linux-x86/arm/ 
+ln -s /aosp/mirror/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6.git /aosp/kernel_mirror/platform/prebuilts/gcc/linux-x86/arm/ 
 ```
 
